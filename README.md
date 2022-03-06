@@ -9,7 +9,7 @@ Starting a node project on the current directory:
 npm init
 ```
 
-Installing dependencies: ```nodemon```, 
+Installing dependencies: 
 ```bash
 sudo npm install -g nodemon   # automatically restarts the node application when file changes are detected
 npm i express body-parser ejs
