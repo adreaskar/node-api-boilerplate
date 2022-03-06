@@ -3,10 +3,15 @@ A boilerplate/starter project for quickly building APIs using Node.js with Expre
 
 This repository was created for personal convenience and it is based on my way of building express projects.
 
-## First commands
+## Setup
 Starting a node project on the current directory:
 ```bash
 npm init
+```
+
+Creating the main application file:
+```bash
+touch app.js
 ```
 
 Installing dependencies: 
@@ -15,7 +20,7 @@ sudo npm install -g nodemon   # automatically restarts the node application when
 npm i express body-parser ejs
 ```
 
-## App.js
+## app.js
 ```javascript
 //jshint esversion:6
 const express = require("express");
