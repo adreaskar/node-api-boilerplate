@@ -16,7 +16,7 @@ touch app.js
 
 Installing dependencies: 
 ```bash
-sudo npm install -g nodemon   # automatically restarts the node application when file changes are detected
+sudo npm i -g nodemon           # automatically restarts the node application when file changes are detected
 npm i express body-parser ejs
 ```
 
