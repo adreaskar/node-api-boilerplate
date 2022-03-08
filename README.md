@@ -25,8 +25,11 @@ npm i express body-parser ejs
 //jshint esversion:6
 const express = require("express");
 const bodyParser = require("body-parser");
+const http = require("http");
 
 const app = express();
+const server = http.createServer(app);
+
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
@@ -38,7 +41,7 @@ app.route("/")
     .post((req,res) => {
     });
 
-const server = app.listen(3000, function () {
+server.listen(3000, function () {
     console.log('Started on port 3000');
 });
 ```
